@@ -98,8 +98,11 @@ main .card .slide-top {
   -webkit-animation: slide-top 1s cubic-bezier(0.5, 0.8, 0.5, 0.8) both;
           animation: slide-top 1s cubic-bezier(0.5, 0.8, 0.5, 0.8) both;
 }
-main .card #share {
+main .card .hidden {
   display: none;
+}
+main .card .visible {
+  display: flex;
 }
 main .card .shares {
   display: flex;
