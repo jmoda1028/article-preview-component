@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(210deg, 46%, 95%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+main .card {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background: #fff;
+  max-width: 73rem;
+  border-radius: 1rem;
+  box-shadow: 0px 18px 11px rgba(0, 0, 0, 0.03);
+  position: relative;
+}
+main .card .drawer-image {
+  display: flex;
+}
+main .card .drawer-image img {
+  width: 285px;
+  height: 280px;
+}
+main .card .articles {
+  max-width: 445px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .card .articles .article {
+  padding: 28px 45px;
+}
+main .card .articles .article h1 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8rem;
+  letter-spacing: 0.015em;
+  color: hsl(217deg, 19%, 35%);
+}
+main .card .articles .article p {
+  color: hsl(210deg, 18%, 64%);
+  font-size: 12px;
+}
+main .card .articles .article .writer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .card .articles .article .writer-container .share-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: hsl(210deg, 46%, 95%);
+}
+main .card .articles .article .writer-container .share-icon:hover {
+  background: hsl(217deg, 19%, 35%);
+}
+main .card .articles .article .writer-container .writer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .card .articles .article .writer-container .writer img {
+  border-radius: 50%;
+  width: 40px;
+}
+main .card .articles .article .writer-container .writer .winter-info {
+  margin-left: 10px;
+}
+main .card .articles .article .writer-container .writer .winter-info a {
+  text-decoration: none;
+  font-weight: 700;
+  color: hsl(217deg, 19%, 35%);
+}
+main .card .articles .article .writer-container .writer .winter-info span {
+  display: block;
+}
+main .card .slide-top {
+  -webkit-animation: slide-top 1s cubic-bezier(0.5, 0.8, 0.5, 0.8) both;
+          animation: slide-top 1s cubic-bezier(0.5, 0.8, 0.5, 0.8) both;
+}
+main .card #share {
+  display: none;
+}
+main .card .shares {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(217deg, 19%, 35%);
+  position: absolute;
+  bottom: 97px;
+  right: -55px;
+  border-radius: 10px;
+  -webkit-animation: slide-top 0.3s cubic-bezier(0.5, 0.8, 0.5, 0.8) both;
+          animation: slide-top 0.3s cubic-bezier(0.5, 0.8, 0.5, 0.8) both;
+}
+main .card .shares::after {
+  content: "";
+  position: absolute;
+  border: 12px solid transparent;
+  border-top: 13px solid hsl(217deg, 19%, 35%);
+  top: 49px;
+}
+main .card .shares .share {
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  padding: 10px 25px;
+}
+main .card .shares .share span {
+  text-transform: uppercase;
+  line-height: 1.8rem;
+  letter-spacing: 0.38em;
+  color: hsl(212deg, 23%, 69%);
+  font-size: 13px;
+}
+main .card .shares .share ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+main .card .shares .share ul li {
+  list-style: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=styles.css.map */
